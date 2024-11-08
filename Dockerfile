@@ -10,7 +10,6 @@ ENV WORKDIR /home/$USER/app
 WORKDIR $WORKDIR
 ADD --from=0 /usr/src/app/node_modules node_modules
 RUN chown $USER:$USER $WORKDIR
-USER 65532
 COPY --chown=node . $WORKDIR
 
 EXPOSE 22
