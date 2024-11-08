@@ -19,7 +19,6 @@ public class User implements Serializable {
     private String userId = null;
     private String name = null;
     @Attribute(name = "userPassword")
-    private String password = null;
     private String secret = null;
     private String phone = null;
     private String mail = null;
